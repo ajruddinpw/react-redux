@@ -1,9 +1,20 @@
  import React from 'react'
- 
- const App = () => {
+ import './App.css'
+ function App() {
+
+  function handleIncrementClick() {
+    // Dispatch increment action
+  }
+
+  function handleDecrementClick() {
+    // Dispatch decrement action
+  }
+
    return (
-     <div>
-       <h1>Hello World</h1>
+     <div className='container'>
+        <button onClick={handleIncrementClick}>+</button>
+        <p>Count:</p>
+        <button onClick={handleDecrementClick}>-</button>
      </div>
    )
  }
